@@ -1,0 +1,107 @@
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+.sach{
+    background-color:#f1f1f1;
+    height: 70px;
+    width: 600px;
+    padding-left: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    position: relative;
+}
+input{
+    margin: 25px;
+    height: 38px;
+    width: 500px;
+    border: none;
+    outline: none;
+    background-color:#f1f1f1;
+}
+::placeholder{
+    font-weight: 600;
+    font-size: larger;
+
+}
+.sak{
+    position: absolute;
+    top: 20px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+.container{
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    gap: 30px;
+    
+}
+button{
+    width: 150px;
+    height: 90px;
+    border-radius: 15px;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+.kotana{
+    display: flex;
+    justify-content: center;
+    }
+    .nine button{
+        background-color: black;
+    }
+    .two button{
+        background-color: rgb(199, 48, 48);
+    }
+    .three button{
+        background-color: rgb(68, 173, 107);
+    }
+    .four button{
+        background-color: rgb(238, 190, 118);
+    }
+    .five button{
+        background-color: green;
+    }
+    .six button{
+        background-color: rgb(234, 67, 17);
+    }
+    .seven button {
+        background-color: blue;
+    }
+    button{
+        cursor: pointer;
+    }
+    button:hover{
+        opacity: 0.3;
+        transition: 0.2s;
+    }
+    button:active{
+        opacity: 0.2;
+        transition: 0.12s;
+    }
+    @media screen and (max-width:900px) {
+        body{
+            background-color:#8f8181;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .sach{
+            width: 300px;
+            position: relative;
+        }
+        .sak{
+            position: absolute;
+            right: 2px;
+        }
+        input{
+            width: 250px;
+        }
+        
+    }
